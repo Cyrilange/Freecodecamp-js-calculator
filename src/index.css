@@ -1,0 +1,96 @@
+:root {
+  --white: rgb(216, 211, 211);
+  --grey1: rgb(114, 111, 111);
+  --color: rgb(40, 145, 194);
+  --color2: rgb(194, 121, 182);
+  --color3: rgb(161, 207, 161);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#calculator-container {
+  gap: 10px;
+  padding: 20px;
+  margin-top: 150px;
+  background-color: antiquewhite;
+  box-shadow: 4px 3px 5px 1px rgba(0, 0, 0, 0.575);
+  border-radius: 15px;
+  width: 250px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#calculator {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+button {
+  flex: 4 4 55px;
+  background-color: var(--color);
+  color: var(--white);
+  height: 70px;
+
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 2.2rem;
+  transition: 0.2s ease-in-out;
+}
+
+.spe {
+  background-color: var(--color2);
+  color: var(--color);
+}
+
+button:active {
+  transform: scale(1.2);
+}
+
+#display {
+  background-color: var(--color3);
+  margin-bottom: 20px;
+  color: var(--grey1);
+  height: 85px;
+  border-radius: 5px;
+  min-width: 240px;
+}
+
+#expression {
+  font-size: 1.5rem;
+  padding: 5px;
+}
+
+#clear,
+#equals,
+#decimal,
+#divide,
+#multiply,
+#moins,
+#subtract,
+#add {
+  color: var(--color2);
+  background: var(--grey1);
+}
